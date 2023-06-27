@@ -5,14 +5,90 @@
 }
 
 body {
-	width: 500px;
+	width: 100%;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #f7f7f7;
+	font-family: 'DM Sans', sans-serif;
+}
+
+button {
+	font-family: 'DM Sans', sans-serif;
 }
 
 .calculator {
+	width: 400px;
+	max-width: 400px;
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 0px 12px 2px #00000010;
+}
+
+.calculator .calculator__screen {
+	min-height: 140px;
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 20px;
+	padding: 0 32px;
+}
+
+.calculator .calculator__screen .input {
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+.calculator .calculator__screen .result {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.calculator .calculator__btn-group {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.calculator .calculator__btn-group .btn {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator .calculator__btn-group .btn .btn__text {
+	background-color: #f7f7f7;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 24px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.calculator .calculator__btn-group .btn .btn__text:hover {
 	background-color: #eee;
+}
+
+.calculator .calculator__btn-group .btn .btn__text .icon-inner svg {
+	width: 24px !important;
+	height: 24px;
 }

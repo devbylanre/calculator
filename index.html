@@ -13,23 +13,216 @@
 			href="index.css"
 		/>
 		<!-- stylesheet -->
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- DM Sans a free Google font -->
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<!-- Ionicons Library -->
 	</head>
 	<body>
 		<div class="calculator">
-			<div class="calculator-screen"></div>
-			<div class="calculator-btn">
-				<div class="calculator-btn__block">1</div>
-				<div class="calculator-btn__block">2</div>
-				<div class="calculator-btn__block">3</div>
-				<div class="calculator-btn__block">4</div>
-				<div class="calculator-btn__block">5</div>
-				<div class="calculator-btn__block">6</div>
-				<div class="calculator-btn__block">7</div>
-				<div class="calculator-btn__block">8</div>
-				<div class="calculator-btn__block">9</div>
-				<div class="calculator-btn__block">0</div>
-				<div class="calculator-btn__block">.</div>
+			<div class="calculator__screen">
+				<div
+					class="input"
+					id="screenInput"
+				></div>
+				<div
+					class="result"
+					id="screenResult"
+				></div>
+			</div>
+			<div class="calculator__btn-group">
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="1"
+						id="valueOne"
+					>
+						1
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="2"
+						id="valueTwo"
+					>
+						2
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="3"
+					>
+						3
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="4"
+					>
+						4
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="5"
+					>
+						5
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="6"
+					>
+						6
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="7"
+					>
+						7
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="8"
+					>
+						8
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="9"
+					>
+						9
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="0"
+					>
+						0
+					</button>
+				</div>
+				<div class="btn">
+					<button
+						class="btn__text"
+						type="button"
+						value="."
+					>
+						.
+					</button>
+				</div>
+				<!-- clear button -->
+				<div class="btn">
+					<button
+						class="btn__text"
+						id="clearScreen"
+					>
+						<ion-icon name="refresh-outline"></ion-icon>
+					</button>
+				</div>
+				<!-- delete button -->
+				<div class="btn">
+					<button
+						class="btn__text"
+						id="delete"
+					>
+						<ion-icon name="backspace-outline"></ion-icon>
+					</button>
+				</div>
+				<!-- addition button -->
+				<div class="btn">
+					<button
+						value="+"
+						class="btn__text"
+					>
+						<ion-icon name="add-outline"></ion-icon>
+					</button>
+				</div>
+				<!-- multiplication button -->
+				<div class="btn">
+					<button
+						value="*"
+						class="btn__text"
+					>
+						<ion-icon name="close-outline"></ion-icon>
+					</button>
+				</div>
+				<!-- subtraction button -->
+				<div class="btn">
+					<button
+						value="-"
+						class="btn__text"
+					>
+						<ion-icon name="remove-outline"></ion-icon>
+					</button>
+				</div>
+				<!-- division button -->
+				<div class="btn">
+					<button
+						value="/"
+						class="btn__text"
+					>
+						<ion-icon name="code-slash-outline"></ion-icon>
+					</button>
+				</div>
+				<!-- equal button -->
+				<div class="btn">
+					<button
+						class="btn__text"
+						id="result"
+					>
+						<ion-icon name="reorder-two-outline"></ion-icon>
+					</button>
+				</div>
 			</div>
 		</div>
+
+		<!-- script file -->
+		<script
+			type="text/javascript"
+			src="index.js"
+		></script>
 	</body>
 </html>
